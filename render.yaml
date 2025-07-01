@@ -1,7 +1,11 @@
+# Exported from Render on 2025-07-01T02:20:23Z
 services:
-  - type: web
-    name: forex-ia-bot
-    env: python
-    buildCommand: ""
-    startCommand: python main.py
-    plan: free
+- type: web
+  name: forex-ia-bot
+  runtime: python
+  repo: https://github.com/Coffeespace8063/Macroeconom-a-definitivo-
+  plan: free
+  region: oregon
+  startCommand: python main.py
+  autoDeployTrigger: commit
+version: "1"
